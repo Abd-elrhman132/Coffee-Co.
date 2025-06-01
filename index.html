@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="img/fav-icon.jpg">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+
+    <title>Coffee Co.</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <header class="header">
+      <div data-aos="fade-right" data-aos-duration="1500" class="logo">
+        Coffee Co.
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li data-aos="fade-down" data-aos-duration="2000" class="nav-items">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li data-aos="fade-down" data-aos-duration="2200" class="nav-items">
+            <a href="#best-sellers" class="nav-link">Best sellers</a>
+          </li>
+          <li data-aos="fade-down" data-aos-duration="2400" class="nav-items">
+            <a href="#about" class="nav-link">Story</a>
+          </li>
+          <li data-aos="fade-down" data-aos-duration="2600" class="nav-items">
+            <a href="#menu" class="nav-link">Menu</a>
+          </li>
+          <li data-aos="fade-down" data-aos-duration="2600" class="nav-items">
+            <a href="#brewing" class="nav-link">Brewing</a>
+          </li>
+          <li data-aos="fade-down" data-aos-duration="2600" class="nav-items">
+            <a href="#testimonials" class="nav-link">testimonials</a>
+          </li>
+          <li data-aos="fade-down" data-aos-duration="2600" class="nav-items">
+            <a href="#contact" class="nav-link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu">
+        <ul class="mobile-nav-list">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#best-sellers" class="nav-link">Best Sellers</a>
+          <a href="#about" class="nav-link">Story</a>
+          <a href="#menu" class="nav-link">Menu</a>
+          <a href="#brewing" class="nav-link">Brewing</a>
+          <a href="#testimonial" class="nav-link">Testimonial</a>
+          <a href="#contact" class="nav-link">Contact Us</a>
+        </ul>
+      </div>
+
+      <!-- Overlay -->
+      <div class="overlay"></div>
+    </header>
+
+
+
+
+
+    <!-- ============== SECTION HERO ==============  -->
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1 data-aos="fade-down" data-aos-duration="2000" class="heading-1">
+          Fuel Your Grind !
+        </h1>
+        <p
+          data-aos="fade-left"
+          data-aos-duration="2400"
+          class="hero-description"
+        >
+          Start every day with purpose and a cup of coffee that means business.
+          Our beans are handpicked and expertly roasted to deliver bold flavor,
+          smooth texture, and just the right kick to keep you going.
+        </p>
+        <button data-aos="fade-up" data-aos-duration="2000" class="btn" >
+          Learn more.
+        </button>
+
+        <!-- Moved inside hero-content -->
+        <div class="stats">
+          <div data-aos="fade-up" data-aos-duration="3000" class="stat">
+            <h3 class="heading-3">1K+</h3>
+            <p class="stats-text">Reviews</p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="stat">
+            <h3 class="heading-3">3K+</h3>
+            <p class="stats-text">Coffee cups per week</p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="3000" class="stat">
+            <h3 class="heading-3">50+</h3>
+            <p class="stats-text">Menu Items</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- ============== SECTION HERO ==============  -->
+
+    <section class="best-sellers" id="best-sellers">
+      <h2 class="heading-2">Best Sellers</h2>
+      <div class="best-sellers-container">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          class="best-seller-item"
+        >
+          <img
+            src="img/coffee-item-2.png"
+            alt="Coffee 1"
+            class="best-seller-image"
+          />
+          <h3 class="heading-3">Velvet Espresso</h3>
+          <p class="best-seller-description">Rich and bold espresso shot.</p>
+          <span class="price">$3.00</span>
+        </div>
+
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1750"
+          class="best-seller-item"
+        >
+          <img
+            src="img/coffee-item-1.png"
+            alt="Coffee 2"
+            class="best-seller-image"
+          />
+          <h3 class="heading-3">Espresso</h3>
+          <p class="best-seller-description">Rich and bold espresso shot.</p>
+          <span class="price">$4.00</span>
+        </div>
+
+        <div
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          class="best-seller-item"
+        >
+          <img
+            src="img/coffee-item-3.png"
+            alt="Coffee 2"
+            class="best-seller-image"
+          />
+          <h3 class="heading-3">Cappuccino</h3>
+          <p class="best-seller-description">
+            Creamy cappuccino with a frothy top.
+          </p>
+          <span class="price">$4.00</span>
+        </div>
+      </div>
+    
+    </section>
+
+
+
+
+
+
+
+
+    <!-- ============== ABOUT SECTION ==============  -->
+    <section class="about" id="about">
+      <h2 class="heading-about">Our Story</h2>
+      <div class="about-content">
+        <p class="hero-description">
+          From a humble street-side stand to a beloved neighborhood café, Coffee
+          Co. is where tradition meets heart. We craft every cup with care,
+          sourcing ethically grown beans and fostering a space for connection
+          and creativity.
+        </p>
+        <div class="timeline">
+          <div class="timeline-item" data-year="2015">
+            <h3>Founded</h3>
+            <p>A cozy stand serving our first cups in the city square.</p>
+          </div>
+          <div class="timeline-item" data-year="2018">
+            <h3>First Café</h3>
+            <p>Opened our doors to create a home for coffee lovers.</p>
+          </div>
+          <div class="timeline-item" data-year="2023">
+            <h3>Community Hub</h3>
+            <p>Launched local art exhibits and live music nights.</p>
+          </div>
+        </div>
+        <blockquote class="founder-quote">
+          “Coffee is more than a drink—it’s a moment shared.” – Abdelrahman,
+          Founder
+        </blockquote>
+        <a href="#" class="btn">Visit Us Today</a>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- ============== MENU SECTION ==============  -->
+    <section class="menu" id="menu">
+      <h2 class="heading-2">Our Menu</h2>
+      <div class="menu-container">
+        <div data-aos="fade-up" data-aos-duration="2300" class="menu-item">
+          <img
+            src="img/arabic-coffee.jpg"
+            alt="Arabic Coffee"
+            class="menu-image"
+          />
+          <h3 class="heading-3">Arabic Coffee</h3>
+          <p class="menu-description">
+            Spiced with cardamom, served hot and rich.
+          </p>
+          <span class="price">$3.50</span>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="2300" class="menu-item">
+          <img
+            src="img/turkish-coffee.jpg"
+            alt="Turkish Coffee"
+            class="menu-image"
+          />
+          <h3 class="heading-3">Turkish Coffee</h3>
+          <p class="menu-description">
+            Finely ground and brewed to perfection.
+          </p>
+          <span class="price">$3.75</span>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="2300" class="menu-item">
+          <img src="img/mocha.jpg" alt="Mocha" class="menu-image" />
+          <h3 class="heading-3">Mocha</h3>
+          <p class="menu-description">Chocolate-infused espresso blend.</p>
+          <span class="price">$4.50</span>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- ============== BREWING SECTION ==============  -->
+    <section class="brewing" id="brewing">
+      <h2 class="heading-2">Brewing Traditions</h2>
+      <div class="brewing-container">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="2300"
+          class="brewing-item"
+        >
+          <img
+            src="img/make arabic coffee.jpg"
+            alt="Making Arabic Coffee"
+            class="brewing-image"
+          />
+          <h3 class="heading-3">Arabic Coffee</h3>
+          <p class="brewing-description">
+            A symbol of hospitality, brewed with care.
+          </p>
+          <ol class="brewing-steps">
+            <li>Grind lightly roasted beans to a coarse powder.</li>
+            <li>Boil with cardamom in a dallah pot.</li>
+            <li>Pour into finjan cups and serve with dates.</li>
+          </ol>
+          <p class="cultural-note">
+            Served to guests as a warm welcome in Middle Eastern homes.
+          </p>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="2300" class="brewing-item">
+          <img
+            src="img/making_turkish_coffee_cropped.jpg"
+            alt="Making Turkish Coffee"
+            class="brewing-image"
+          />
+          <h3 class="heading-3">Turkish Coffee</h3>
+          <p class="brewing-description">
+            Rich and unfiltered, brewed in a cezve.
+          </p>
+          <ol class="brewing-steps">
+            <li>Grind beans to an extra-fine powder.</li>
+            <li>Simmer with sugar in a cezve over low heat.</li>
+            <li>Serve unfiltered in small cups.</li>
+          </ol>
+          <p class="cultural-note">
+            A UNESCO-recognized tradition, savored slowly.
+          </p>
+        </div>
+      </div>
+      <a data-aos="fade-up" data-aos-duration="2500" href="#" class="btn"
+        >Explore More Brews</a
+      >
+    </section>
+
+
+
+
+
+    <!-- ============== TESTIMONIAL SECTION ============== -->
+    <section class="testimonials" id="testimonials">
+      <h2 class="heading-2">What Our Customers Say</h2>
+      <div class="testimonial-container">
+        <div
+          class="testimonial-card"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <div class="testimonial-img-wrapper">
+            <img src="img/rev1.jpg" alt="Customer 1" class="testimonial-img" />
+          </div>
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "Absolutely love the Arabic coffee here—flavorful, authentic, and
+              served with such warmth. It’s my go-to café every weekend!"
+            </p>
+            <h3 class="testimonial-name">Layla H.</h3>
+            <span class="testimonial-rating">★★★★★</span>
+          </div>
+        </div>
+
+        <div
+          class="testimonial-card"
+          data-aos="fade-up"
+          data-aos-duration="2200"
+        >
+          <div class="testimonial-img-wrapper">
+            <img src="img/rev2.jpg" alt="Customer 2" class="testimonial-img" />
+          </div>
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "A cozy spot to unwind and get some work done. The espresso is
+              smooth and strong, just how I like it!"
+            </p>
+            <h3 class="testimonial-name">Mark T.</h3>
+            <span class="testimonial-rating">★★★★☆</span>
+          </div>
+        </div>
+
+        <div
+          class="testimonial-card"
+          data-aos="fade-up"
+          data-aos-duration="2400"
+        >
+          <div class="testimonial-img-wrapper">
+            <img src="img/rev3.jpg" alt="Customer 3" class="testimonial-img" />
+          </div>
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "The vibes, the coffee, the people—this place just feels like
+              home. Cappuccino is a must-try!"
+            </p>
+            <h3 class="testimonial-name">Sara B.</h3>
+            <span class="testimonial-rating">★★★★★</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- ============== CONTACT US SECTION ==============  -->
+    <section class="contact" id="contact">
+      <h2 class="heading-2">Contact Us</h2>
+      <div class="contact-container">
+        <form
+          data-aos="fade-down"
+          data-aos-duration="2300"
+          class="contact-form"
+        >
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div data-aos="fade-up" data-aos-duration="2300" class="contact-info">
+          <h3 class="heading-3">Get in Touch</h3>
+          <p>Email: <a href="mailto:info@coffeeco.com">info@coffeeco.com</a></p>
+          <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+          <p>Visit us: 123 Roast Lane, Bean City, Earth</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== FOOTER SECTION ============== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3 class="logo">Coffee Co.</h3>
+          <p class="footer-tagline">Crafting moments, one cup at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#" class="footer-link">Shop</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 class="footer-heading">Connect with Us</h4>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@coffeeco.com" class="footer-link"
+              >info@coffeeco.com</a
+            >
+          </p>
+          <p>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+1234567890" class="footer-link">+1 234 567 890</a>
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 123 Roast Lane, Bean City,
+            Earth
+          </p>
+        </div>
+        <div class="footer-social">
+          <h4 class="footer-heading">Follow Us</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Coffee Co. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
