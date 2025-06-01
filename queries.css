@@ -1,140 +1,10 @@
-/* Responsive Design */
-
-
-.footer {
-  background-image: linear-gradient(rgba(31, 26, 23, 0.85), rgba(31, 26, 23, 0.85)), url('img/footer-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #fefaf6;
-  padding: 5rem 12rem;
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  overflow: hidden;
-}
-
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: start;
-}
-
-.footer-brand {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.footer-brand .logo {
-  font-size: 3.2rem;
-  font-weight: 800;
-  color: #fefaf6;
-  letter-spacing: 0.1rem;
-  transition: color 0.3s ease;
-}
-
-.footer-brand .logo:hover {
-  color: #a68a64;
-}
-
-.footer-tagline {
-  font-size: 1.5rem;
-  color: #e9e3d6;
-  line-height: 1.6;
-  max-width: 25rem;
-  opacity: 0.9;
-}
-
-.footer-heading {
-  font-size: 2rem;
-  color: #a68a64;
-  margin-bottom: 1.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-}
-
-.footer-nav-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.footer-link {
-  color: #fefaf6;
-  text-decoration: none;
-  font-size: 1.6rem;
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-.footer-link:hover {
-  color: #a68a64;
-  transform: translateX(5px);
-}
-
-.footer-contact p {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.footer-contact i {
-  color: #a68a64;
-  font-size: 1.8rem;
-}
-
-.footer-social .social-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.social-link {
-  color: #fefaf6;
-  font-size: 2.2rem;
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  background: rgba(166, 138, 100, 0.2);
-}
-
-.social-link:hover {
-  color: #a68a64;
-  transform: scale(1.15);
-  background: rgba(166, 138, 100, 0.4);
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.footer-bottom p {
-  font-size: 1.4rem;
-  color: #e9e3d6;
-  opacity: 0.8;
-}
-
-
-
-
-
-/* Responsive Design */
 @media (max-width: 1200px) {
+  section {
+    padding: 6rem 6rem;
+  }
+
   .header {
-    padding: 0 2rem;
+    padding: 0 4rem;
     height: 7rem;
   }
 
@@ -154,17 +24,39 @@
     max-width: 100%;
   }
 
-  .demo-content {
-    margin-top: 9rem;
-    padding: 1rem;
+  .hero {
+    padding-top: 7rem; /* Match header height */
   }
 
-  .demo-content h1 {
-    font-size: 3rem;
+  .hero-content {
+    padding: 3rem;
+    max-width: 100rem;
   }
 
-  .demo-content p {
-    font-size: 1.6rem;
+  .heading-1 {
+    font-size: 5.2rem;
+  }
+
+  .heading-2, .heading-about {
+    font-size: 4.4rem;
+  }
+
+  .hero-description {
+    font-size: 2.2rem;
+    max-width: 80rem;
+  }
+
+  .stats {
+    gap: 4rem;
+  }
+
+  .stat {
+    min-width: 16rem;
+    padding: 1.8rem 2.5rem;
+  }
+
+  .brewing {
+    padding: 6rem 6rem;
   }
 
   .footer {
@@ -173,6 +65,142 @@
 }
 
 @media (max-width: 768px) {
+  section {
+    padding: 4rem 3rem;
+  }
+
+  .header {
+    height: 7rem;
+    padding: 0 2rem;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  .nav-list {
+    gap: 2rem;
+  }
+
+  .hero {
+    padding-top: 7rem;
+    min-height: auto; /* Allow content to dictate height */
+    height: auto;
+    padding-bottom: 4rem; /* Add bottom padding */
+  }
+
+  .hero-content {
+    padding: 2rem;
+  }
+
+  .heading-1 {
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .heading-2, .heading-about {
+    font-size: 3.6rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .hero-description {
+    font-size: 2rem;
+    max-width: 100%; /* Full width for readability */
+  }
+
+  .btn {
+    padding: 1.5rem 4rem;
+    font-size: 1.8rem;
+  }
+
+  .stats {
+    gap: 3rem;
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+  }
+
+  .stat {
+    min-width: 100%;
+    padding: 1.5rem 2rem;
+  }
+
+  .testimonials {
+    padding: 4rem 1.5rem;
+  }
+
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .testimonial-img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .contact {
+    padding: 6rem 2rem;
+  }
+
+  .contact-container {
+    gap: 4rem;
+  }
+
+  .contact-form,
+  .contact-info {
+    flex: 1 1 100%;
+  }
+
+  .about {
+    padding: 6rem 3rem;
+  }
+
+  .timeline {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .timeline-item {
+    width: 100%;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  nav a {
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .best-sellers,
+  .menu,
+  .brewing {
+    padding: 6rem 3rem;
+  }
+
+  .best-sellers-container {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 4rem;
+  }
+
+  .brewing {
+    padding: 4rem 3rem;
+  }
+
+  .brewing-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .brewing-image {
+    max-width: 100%;
+    height: 15rem;
+  }
+
   .footer {
     padding: 3rem 3rem;
   }
@@ -203,6 +231,10 @@
 }
 
 @media (max-width: 480px) {
+  section {
+    padding: 3rem 2rem;
+  }
+
   .header {
     padding: 0 1.5rem;
     height: 6rem;
@@ -217,17 +249,61 @@
     padding: 1.2rem 2rem;
   }
 
-  .demo-content {
-    margin-top: 8rem;
+  .hero {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
   }
 
-  .demo-content h1 {
-    font-size: 2.5rem;
+  .hero-content {
+    padding: 1.5rem;
   }
 
-  .demo-content p {
+  .heading-1 {
+    font-size: 3.2rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .heading-2, .heading-about {
+    font-size: 3rem;
+    margin-top: 6rem;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+    max-width: 100%;
+  }
+
+  .btn {
+    padding: 1.2rem 3rem;
+    font-size: 1.6rem;
+  }
+
+  .stats {
+    gap: 2rem;
+  }
+
+  .stat {
+    padding: 1.2rem 1.8rem;
+  }
+
+  .brewing {
+    padding: 3rem 2rem;
+  }
+
+  .brewing .heading-2 {
+    font-size: 3rem;
+  }
+
+  .brewing .heading-3 {
+    font-size: 2rem;
+  }
+
+  .brewing-description,
+  .brewing-steps,
+  .cultural-note {
     font-size: 1.4rem;
   }
+
   .footer {
     padding: 2rem 2rem;
   }
@@ -257,238 +333,5 @@
 
   .footer-bottom p {
     font-size: 1.2rem;
-  }
-}
-
-
-
-
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .brewing {
-    padding: 6rem 6rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .brewing {
-    padding: 4rem 3rem;
-  }
-  .brewing-container {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-  .brewing-image {
-    max-width: 100%;
-    height: 15rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .brewing {
-    padding: 3rem 2rem;
-  }
-  .brewing .heading-2 {
-    font-size: 3rem;
-  }
-  .brewing .heading-3 {
-    font-size: 2rem;
-  }
-  .brewing-description,
-  .brewing-steps,
-  .cultural-note {
-    font-size: 1.4rem;
-  }
-}
-
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 1200px) {
-
-  
-  
-  section {
-    padding: 6rem 6rem;
-  }
-
-  .header {
-    padding: 0 4rem;
-  }
-
-  .heading-1 {
-    font-size: 5.2rem;
-  }
-
-  .heading-2,.heading-about {
-    font-size: 4.4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  section {
-    padding: 4rem 3rem;
-  }
-
-  .testimonials {
-    padding: 4rem 1.5rem;
-  }
-
-  .heading-2 {
-    font-size: 2.4rem;
-  }
-
-  .testimonial-container {
-    grid-template-columns: 1fr;
-  }
-
-  .testimonial-card {
-    padding: 2.5rem 1.5rem;
-  }
-
-  .testimonial-img {
-    width: 8rem;
-    height: 8rem;
-  }
-
-  .contact {
-    padding: 6rem 2rem;
-  }
-
-  .contact-container {
-    gap: 4rem;
-  }
-
-  .contact-form,
-  .contact-info {
-    flex: 1 1 100%;
-  }
-
-  .header {
-    height: 7rem;
-    padding: 0 2rem;
-  }
-
-  .logo {
-    font-size: 3rem;
-  }
-
-  .nav-list {
-    gap: 2rem;
-  }
-
-   .about {
-    padding: 6rem 3rem;
-  }
-
-  .timeline {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .timeline-item {
-    width: 100%;
-  }
-  .timeline::before {
-    display: none;
-  }
-
-  nav a {
-    font-size: 1.6rem;
-    padding: 1rem 1.5rem;
-  }
-
-  .hero-content {
-    padding: 2rem;
-  }
-
-  .heading-1 {
-    font-size: 4rem;
-    letter-spacing: 0.4rem;
-  }
-
-  .heading-2,.heading-about {
-    font-size: 3.6rem;
-    letter-spacing: 0.3rem;
-  }
-
-  .hero-description {
-    font-size: 2rem;
-    max-width: 70rem;
-  }
-
-  .btn {
-    padding: 1.5rem 4rem;
-    font-size: 1.8rem;
-  }
-  .about {
-    padding: 0;
-    height: auto;
-    line-height: 1.6;
-  }
-
-  .stats {
-    gap: 4rem;
-  }
-
-  .stat {
-    min-width: 18rem;
-    padding: 2rem 3rem;
-  }
-
-  .best-sellers,
-  .menu,
-  .brewing {
-    padding: 6rem 3rem;
-  }
-
-  .best-sellers-container {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 4rem;
-  }
-}
-
-@media (max-width: 480px) {
-  section {
-    padding: 3rem 2rem;
-  }
-
-  .header {
-    flex-direction: column;
-    height: auto;
-    padding: 2rem;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .heading-1 {
-    font-size: 3.2rem;
-    letter-spacing: 0.3rem;
-  }
-
-  .heading-2,.heading-about {
-    font-size: 3rem;
-    margin-top: 6rem;
-  }
-
-  .hero-description {
-    font-size: 1.8rem;
-    max-width: 90%;
-  }
-
-  .btn {
-    padding: 1.2rem 3rem;
-    font-size: 1.6rem;
-  }
-
-  .stats {
-    gap: 3rem;
-  }
-
-  .stat {
-    min-width: 100%;
-    padding: 1.8rem 2.5rem;
   }
 }
